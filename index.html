@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Water Level</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyC0IYzD36dJS3-914Qx7T1bHNqAtw9B_XI",
+            authDomain: "esp-01-test.firebaseapp.com",
+            databaseURL: "https://esp-01-test-default-rtdb.firebaseio.com",
+            projectId: "esp-01-test",
+            storageBucket: "esp-01-test.appspot.com",
+            messagingSenderId: "835672435504",
+            appId: "1:835672435504:web:0fb026e9734d7d5931f6f5"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <link rel="stylesheet" type="text/css" id="css">
+</head>
+<body>
+    <center>
+        <h1 id="main">Shresth._.Sharma</h1>
+        <h1 id="main2">Overflow Prevention</h1>
+    </center>
+    <center>
+        <div id="container">
+            <div id="level">
+                <center><h1 id="leveltext">0%</h1></center>
+            </div>
+        </div>
+    </center>
+    <script id="js"></script>
+    <script>
+        var screenWidth = window.innerWidth;
+        var screenHeight = window.innerHeight;
+        if(screenWidth/screenHeight < 1){
+            document.getElementById('css').setAttribute("href", "style1.css");
+            document.getElementById('js').setAttribute("src", "main1.js");
+        }
+        else{
+            document.getElementById('css').setAttribute("href", "style.css");
+            document.getElementById('js').setAttribute("src", "main.js");
+        }
+    </script>
+</body>
+</html>
