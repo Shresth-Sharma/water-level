@@ -12,6 +12,9 @@ function set(per){
         document.getElementById('level').style.marginTop = (65/100)*(100-per) + 'vh';
         document.getElementById('leveltext').innerHTML = per + '%';
     }
+    else{
+        document.getElementById('leveltext').innerHTML = per + '';
+    }
 }
 function repeat(){
     var gameStateRef  = database.ref('data/b');
